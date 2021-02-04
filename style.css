@@ -104,4 +104,12 @@ body {
   top: -45px;
 }
 
+.road {
+  position: absolute;
+  width: 99%;
+  bottom: 0px;
+  background: brown;
+  height: 55px;
+}
+
 /*# sourceMappingURL=style.css.map */
