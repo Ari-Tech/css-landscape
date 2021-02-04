@@ -1,0 +1,107 @@
+body {
+  color: #efefef;
+  background: #000;
+  animation: bgChange 8s 1;
+}
+
+@keyframes carmove {
+  from {
+    left: 20px;
+  }
+  to {
+    left: 80%;
+  }
+}
+@keyframes bgChange {
+  from {
+    background: navajowhite;
+  }
+  to {
+    background: #000;
+  }
+}
+@keyframes sunset {
+  from {
+    top: 40px;
+    opacity: 1;
+  }
+  to {
+    top: 800px;
+    opacity: 0;
+  }
+}
+@keyframes moon {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.moon {
+  opacity: 0;
+  animation: moon forwards 5s;
+  animation-delay: 2s;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: deepskyblue;
+  position: absolute;
+  left: 50%;
+  top: 40px;
+  box-shadow: 2px 2px 2px cornflowerblue;
+}
+
+.sun {
+  animation: sunset forwards 5s ease-out;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: yellow;
+  position: absolute;
+  left: 50%;
+  top: 40px;
+}
+
+.car {
+  position: absolute;
+  bottom: 10px;
+  animation: carmove forwards 10s;
+  left: 20px;
+}
+.car .car-top {
+  position: relative;
+  width: 80px;
+  height: 40px;
+  left: 60px;
+  background: darkred;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.car .car-bottom {
+  width: 200px;
+  height: 50px;
+  background: darkred;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.car .car-wheel-left {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #000;
+  left: 40px;
+  top: -15px;
+}
+.car .car-wheel-right {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #000;
+  left: 130px;
+  top: -45px;
+}
+
+/*# sourceMappingURL=style.css.map */
